@@ -3,7 +3,7 @@
 	Assignment 4
 	Zaquariah Holland
 	
-	finish this description
+	The file that contains all functions used in holland-zaquariah-project4.c
 */
 
 #include <stdio.h>
@@ -17,7 +17,8 @@
 		PointDistance* points: calls the struct array
 	Returns: nothing
 */
-void callFor2Points(PointDistance* points){
+void callFor2Points(PointDistance* points)
+{
 	printf("Type A value : ");
 	scanf("%lf", &points[0].values);
 	printf("Type B value : ");
@@ -31,12 +32,13 @@ void callFor2Points(PointDistance* points){
 		PointDistance* points: calls the struct array
 	Returns: nothing
 */
-void calcDistance(PointDistance* points) {
+void calcDistance(PointDistance* points)
+{
 	PointDistance distance;
 	
 	distance.values = fabs( points[0].values - points[1].values );
 	
-	printf("Distance between A and B = %lf\n", distance.values);
+	printf("Distance between A and B is %lf\n", distance.values);
 }
 
 /*
@@ -46,7 +48,8 @@ void calcDistance(PointDistance* points) {
 		PointDistance* points: calls the struct array
 	Return: the mean of the point values
 */
-double calcMidPoint(PointDistance* points) {
+double calcMidPoint(PointDistance* points)
+{
 	double total;
 	
 	total = ( points[0].values + points[1].values ) / 2;
