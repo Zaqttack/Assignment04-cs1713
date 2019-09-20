@@ -3,7 +3,7 @@
 	Assignment 4
 	Zaquariah Holland
 	
-	
+	finish this description
 */
 
 #include <stdio.h>
